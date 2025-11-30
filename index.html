@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-cloud-sun"></i>
+                <h1>Weather Dashboard</h1>
+            </div>
+            <div class="controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+                <button class="unit-toggle" id="unitToggle">
+                    <i class="fas fa-temperature-low"></i>
+                    <span>°C / °F</span>
+                </button>
+                <button class="refresh-btn" id="refreshBtn">
+                    <i class="fas fa-sync-alt"></i>
+                    <span>Refresh</span>
+                </button>
+            </div>
+        </header>
+
+        <div class="search-container">
+            <input type="text" class="search-box" id="searchBox" placeholder="Cari kota...">
+            <div class="autocomplete-list" id="autocompleteList"></div>
+        </div>
+
+        <div class="favorites-container" id="favoritesContainer">
+            <!-- Favorite cities will be added here dynamically -->
+        </div>
+
+        <div class="current-weather" id="currentWeather">
+            <div class="loading">
+                <div class="spinner"></div>
+            </div>
+            <div class="weather-content hidden">
+                <div class="location-info">
+                    <div class="city-name" id="cityName">-</div>
+                    <div class="timestamp" id="timestamp">-</div>
+                </div>
+                <div class="weather-main">
+                    <div class="temperature" id="temperature">-</div>
+                    <div class="weather-icon" id="weatherIcon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Kondisi Cuaca</div>
+                        <div class="detail-value" id="weatherCondition">-</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Kelembaban</div>
+                        <div class="detail-value" id="humidity">-</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Kecepatan Angin</div>
+                        <div class="detail-value" id="windSpeed">-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="forecast-container">
+            <h2 class="section-title">Prakiraan 5 Hari</h2>
+            <div class="forecast-cards" id="forecastCards">
+                <div class="loading">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Weather Dashboard &copy; 2025 - Data provided by OpenWeatherMap</p>
+    </footer>
+
+    <script src="js/weather-api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
