@@ -51,14 +51,14 @@ Aplikasi web untuk menampilkan informasi cuaca terkini dan prakiraan cuaca 5 har
 ![Dark Theme](./screenshots/Tema%20Gelap.png)
 
 ## 👨‍💻 Developer
-Nama: Destarahma
-NPM: 2315061006
-Kelas: PSTI B
-Praktikum: Pemrograman Web
+- Nama: Destarahma
+- NPM: 2315061006
+- Kelas: PSTI B
+- Praktikum: Pemrograman Web
 
 ## 🔗 Links
-GitHub Repository: https://github.com/destarahma/Praktikum-Pemrograman-Web-Judul-6
-OpenWeatherMap API: https://openweathermap.org/api
+- GitHub Repository: https://github.com/destarahma/Praktikum-Pemrograman-Web-Judul-6
+- OpenWeatherMap API: https://openweathermap.org/api
 
 ## 📄 Lisensi
 Project ini dibuat untuk keperluan akademik - Praktikum Pemrograman Web Judul 6.
